@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김지윤 포트폴리오</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- fancybox js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function(){
+            //영상편집 slide
+            var swiper = new Swiper(".mySwiper", {
+                pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+
+            //영상편집 tap menu
+            $('.motion_menu ul li').click(function(){
+                $('.motion_menu ul li').removeClass('on');
+                $(this).addClass('on');
+
+                $('mySwiper').removeClass('on')
+                $('mySwiper').eq($(this).index()).addClass('on');
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1><a href="#">text</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">영상편집</a></li>
+                    <li><a href="#">웹디자인/웹퍼블리싱</a></li>
+                    <li><a href="#">2d디자인</a></li>
+                    <li><a href="#">나의소개</a></li>
+                </ul>
+            </nav>
+        </div><!-- .inner end -->
+    </header>
+    <section class="main_visual">
+        <img src="img/visual1-1.jpg" alt="">
+        <div class="inner">
+            <p>motion graphic designer</p>
+            <h2>name designer</h2>
+        </div><!-- .inner end -->
+    </section><!-- .main_visual end -->
+
+    <section class="cont01">
+        <div class="inner">
+            <div class="title">
+                <h3>영상편집</h3>
+                <p>프리미어프로, 에프터이펙트 등을 사용하여 모션 그래픽을 제작하였습니다.</p>
+            </div><!-- .title end -->
+            <div class="motion_menu">
+                <ul>
+                    <li class="on">게임</li>
+                    <li>홍보영상</li>
+                    <li>인포그래픽</li>
+                    <li>브이로그</li>
+                    <li>뮤비티저</li>
+                </ul>
+            </div><!-- .motion_menu end -->
+            <!-- swiper slide -->
+
+            <!-- motion_menu 1 게임 -->
+            <div class="swiper mySwiper on">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_XRPa9eMq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 1 -->
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/s1yLkjo_ub0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 2 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div><!-- .swiper end 1 -->
+
+            <!-- motion_menu 2 홍보영상 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_XRPa9eMq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 1 -->
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/s1yLkjo_ub0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 2 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div><!-- .swiper end 2 -->
+
+            <!-- motion_menu 3 인포그래픽 -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_XRPa9eMq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 1 -->
+                    <div class="swiper-slide">
+                        <div class="item">
+                            <!-- youtube -->
+                            <div class="pc_youtube">
+                                <img src="img/pc_img.png" alt="pc_monitor"/>
+                                <div class="youtube">
+                                    <div>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/s1yLkjo_ub0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div><!-- .pc_youtube end -->
+                            <div class="info">
+                                <strong>촬영, 출연, 편집, 디자인, 특수효과</strong>
+                                <h4>영상제목</h4>
+                                <p>컨셉 및 제작목적
+                                    위하여 인생의 꾸며 눈이 얼마나 풍부하게 광야에서 불러 있는 뿐이다. 할지니, 위하여서, 노년에게서 돋고, 하여도 군영과 가치를 있다. 많이 불러 원질이 얼마나 아름다우냐? 보이는 찬미를 곳으로 내려온 무엇이 이상 목숨이 철환하였는가? 품에 것이 끓는 심장의 맺어, 인간의 같지 이것이다. 발휘하기 있는 이상은 열락의 밝은 바이며, 그들의 충분히 귀는 때문이다.
+                                </p>
+                                <ul class="text">
+                                    <li><strong>프로그램</strong>: Premier pro, After effect, MAYA, Photoshop, Illustrator</li>
+                                    <li><strong>제작일자</strong>: 2022.09</li>
+                                </ul><!-- .text end -->
+                                <ul class="btn">
+                                    <li><a href="#">영상원본 보기</a></li>
+                                    <li><a href="#">기획서 보기</a></li>
+                                </ul><!-- .btn end -->
+                            </div><!-- .info end -->
+                        </div><!-- .item end -->
+                    </div><!-- 2 -->
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div><!-- .swiper end 3 -->
+
+
+        </div><!-- .inner end -->
+    </section><!-- .cont01 end -->
+    <section class="cont03">
+        <div class="title inner">
+            <h3>웹디자인</h3>
+            <p>접근성, 호환성을 고려한 웹 사이트 리뉴얼</p>
+        </div><!-- .title end -->
+        <div class="list inner">
+
+            <div class="item"><!-- 1 -->
+                <img src="img/cgv_renewal_01.jpg" alt="웹 사이트 이름">
+                <div class="info">
+                    <h4>CGV 웹 사이트 리뉴얼</h4>
+                    <p>제작 목적, concept, website renewal을 위해 기획, 디자인, html, css 언어를 활용하여 웹사이트를 구현하였습니다.</p>
+                    <ul class="text">
+                        <li><strong>Program</strong> : photoshop, VScode</li>
+                        <li><strong>사용 언어</strong> : html, css</li>
+                        <li><strong>제작일자</strong> : 2022.08</li>
+                    </ul>
+                    <ul class="btn">
+                        <li><a href="sub/web1/img/기획서.jpg" target="blank">기획서 및 작업 과정</a></li>
+                        <li><a href="sub/web1/index.html" target="blank">사이트 보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+            </div><!-- .item 1 end -->
+
+            <div class="item"><!-- 2 -->
+                <img src="img/cgv_renewal_02.jpg" alt="웹 사이트 이름">
+                <div class="info">
+                    <h4>CGV 웹 사이트 리뉴얼</h4>
+                    <p>제작 목적, concept, website renewal을 위해 기획, 디자인, html, css 언어를 활용하여 웹사이트를 구현하였습니다.</p>
+                    <ul class="text">
+                        <li><strong>Program</strong> : photoshop, VScode</li>
+                        <li><strong>사용 언어</strong> : html, css</li>
+                        <li><strong>제작일자</strong> : 2022.08</li>
+                    </ul>
+                    <ul class="btn">
+                        <li><a href="#">기획서 및 작업 과정</a></li>
+                        <li><a href="#">사이트 보기</a></li>
+                    </ul><!-- .btn end -->
+                </div><!-- .info end -->
+            </div><!-- .item 2 end -->
+
+        </div><!-- .list end -->
+    </section><!-- .cont03 end -->
+
+    <section class="cont04">
+        <div class="inner">
+            <div class="title">
+                <h3>그래픽디자인</h3>
+                <p>2D, 3D 그래픽을 포토샵, 일러스트를 이용하여 디자인을 제작하였습니다.</p>
+            </div><!-- .title end -->
+
+            <div class="list">
+                <a href="img/berries.jpg" data-fancybox="images">
+                    <img src="img/berries.jpg" alt="berries"/>
+                    <div class="info">
+                        <h4>그래픽 디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- .info end -->
+                </a>
+                <a href="img/berries.jpg" data-fancybox="images">
+                    <img src="img/berries.jpg" alt="berries"/>
+                    <div class="info">
+                        <h4>그래픽 디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- .info end -->
+                </a>
+                <a href="img/berries.jpg" data-fancybox="images">
+                    <img src="img/berries.jpg" alt="berries"/>
+                    <div class="info">
+                        <h4>그래픽 디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- .info end -->
+                </a>
+                <a href="img/berries.jpg" data-fancybox="images">
+                    <img src="img/berries.jpg" alt="berries"/>
+                    <div class="info">
+                        <h4>그래픽 디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- .info end -->
+                </a>
+                <a href="img/berries.jpg" data-fancybox="images">
+                    <img src="img/berries.jpg" alt="berries"/>
+                    <div class="info">
+                        <h4>그래픽 디자인 제목</h4>
+                        <p>사용한 프로그램</p>
+                    </div><!-- .info end -->
+                </a>
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont04 end -->
+    <section class="cont05">
+        <div class="inner">
+            <div class="title">
+                <h3>나의 소개</h3>
+                <p>나의 경력, 이력, 스킬을 공유합니다.</p>
+            </div><!-- .title end -->
+            <div class="info">
+                <div class="info_img">
+                    <img src="img/candy-434734_1920_1.jpeg" alt="img_candy">
+                </div><!-- .info_img end -->
+                <div class="text">
+                    <ul>
+                        <li><strong>name</strong></li>
+                        <li>name...</li>
+                    </ul>
+                    <ul>
+                        <li><strong>call</strong></li>
+                        <li>010.0000.0000</li>
+                    </ul>
+                    <ul>
+                        <li><strong>birth</strong></li>
+                        <li>2000.00.00</li>
+                    </ul>
+                    <ul>
+                        <li><strong>kakao ID</strong></li>
+                        <li>lullue♥</li>
+                    </ul>
+                    <ul>
+                        <li><strong>career</strong></li>
+                        <li>career, award history..</li>
+                    </ul>
+                    <ul>
+                        <li><strong>교육</strong></li>
+                        <li>[멀티미디어컨텐츠제작]스마트-영상편집 & 웹
+                            <br>(프리미어, 에펙, 시네마 4D)
+                        </li>
+                    </ul>
+                    <ul class="list">
+                        <li># 웹제작</li>
+                        <li class="V"># 영상편집</li>
+                        <li># html</li>
+                        <li># css</li>
+                        <li># jquery</li>
+                        <li># Photoshop</li>
+                        <li># Illustrator</li>
+                        <li class="V"># Premier pro</li>
+                        <li class="V"># After effect</li>
+                        <li class="V"># MAYA</li>
+                        <li class="V"># 4D</li>
+                    </ul><!-- .list end -->
+                </div><!-- .text end -->
+            </div><!-- .info end -->
+        </div><!-- .inner end -->
+    </section><!-- .cont05 end -->
+
+    <footer>
+        <ul>
+            <li><a href="#">youtube channel 이동</a></li>
+            <li><a href="#">지원서 download</a></li>
+        </ul>
+        <p>COPYRIGHT 2022. DESIGNER SOMEONE. ALL RIGHT RESERVED.</p>
+    </footer>
+</body>
+</html>
